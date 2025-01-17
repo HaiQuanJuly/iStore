@@ -56,6 +56,9 @@ export default function Section_two() {
                   <div className="bg-[#D2DDCD] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 </div>
+                <div className="flex items-center justify-center py-5">
+                  <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                </div>
                 <div className="flex gap-2">
                   <p className="line-through">19.429.000đ</p>
                   <p className="text-[#0A84FF] font-bold">15.429.000đ</p>
@@ -73,6 +76,9 @@ export default function Section_two() {
                   <div className="bg-[#D2DDCD] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 </div>
+                <div className="flex items-center justify-center py-5">
+                  <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                </div>
                 <div className="flex gap-2">
                   <p className="line-through">19.429.000đ</p>
                   <p className="text-[#0A84FF] font-bold">15.429.000đ</p>
@@ -89,6 +95,9 @@ export default function Section_two() {
                   <div className="bg-[#EEE9CC] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#D2DDCD] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
+                </div>
+                <div className="flex items-center justify-center py-5">
+                  <p className="font-bold">iPhone 15 Pro Max 256GB</p>
                 </div>
                 <div className="flex gap-2">
                   <p className="line-through">19.429.000đ</p>
@@ -107,6 +116,9 @@ export default function Section_two() {
                   <div className="bg-[#D2DDCD] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 </div>
+                <div className="flex items-center justify-center py-5">
+                  <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                </div>
                 <div className="flex gap-2">
                   <p className="line-through">19.429.000đ</p>
                   <p className="text-[#0A84FF] font-bold">15.429.000đ</p>
@@ -123,6 +135,9 @@ export default function Section_two() {
                   <div className="bg-[#EEE9CC] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#D2DDCD] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                   <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
+                </div>
+                <div className="flex items-center justify-center py-5">
+                  <p className="font-bold">iPhone 15 Pro Max 256GB</p>
                 </div>
                 <div className="flex gap-2">
                   <p className="line-through">19.429.000đ</p>

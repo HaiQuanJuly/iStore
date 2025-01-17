@@ -44,7 +44,7 @@ export default function Section_three() {
                     <p className="font-bold">128GB</p>
                     <p>24,000,000</p>
                   </div>
-                  <div className="border-solid border-[1px] border-[#B3B3B3] w-[120px] h-[80px] rounded-md flex flex-col justify-center pl-3 hover:border-[#00B685]">
+                  <div className="border-solid border-[1px] border-[#B3B3B3] w-[120px] h-[80px] rounded-md flex flex-col justify-center pl-3 xem">
                     <p className="font-bold">128GB</p>
                     <p>24,000,000</p>
                   </div>

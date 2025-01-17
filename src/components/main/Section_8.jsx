@@ -1,30 +1,30 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { TiArrowUnsorted } from "react-icons/ti";
-import product_1 from "../../assets/product/product_1.png";
-import product_2 from "../../assets/product/product_2.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import print1 from "../../assets/product/print_1.png";
+import print2 from "../../assets/product/print_2.png";
 
-export default function Section_four() {
+export default function Section_eight() {
   return (
     <div className="bg-[#F4F5F8] px-[100px] py-12">
       <main className="bg-white rounded-xl p-8">
         <div className="flex items-center p-[40px] gap-2">
-          <p className="font-bold text-[30px]">iPhone.</p>
+          <p className="font-bold text-[30px]">Phụ kiện.</p>
           <p className="font-bold text-[#3C3C4399] text-[30px]">
-            Mọi phiên bản - Hãy chọn mẫu bạn thích
+            Another message here
           </p>
         </div>
         <div className="flex justify-between pr-[40px]">
           <div className="flex gap-[10px] px-[40px]">
             <div className="w-[133px] h-[36px] rounded-lg border-[1px] flex items-center justify-center hover:border-[#00B685] hover:bg-[#E6F8F3] hover:text-[#00B685] hover:font-bold">
-              iPhone 11 series
+              Máy in 1
             </div>
             <div className="w-[133px] h-[36px] rounded-lg border-[1px] flex items-center justify-center hover:border-[#00B685] hover:bg-[#E6F8F3] hover:text-[#00B685] hover:font-bold">
-              iPhone 12 series
+              Máy in 2
             </div>
             <div className="w-[133px] h-[36px] rounded-lg border-[1px] flex items-center justify-center hover:border-[#00B685] hover:bg-[#E6F8F3] hover:text-[#00B685] hover:font-bold">
-              iPhone 13 series
+              Máy in 3
             </div>
           </div>
           <div className="w-[156px] h-[36px] border-[1px] rounded-[100px] flex items-center px-2 gap-5">
@@ -41,7 +41,7 @@ export default function Section_four() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] ">
                 New
               </p>
-              <img src={product_1} className="mx-auto"></img>
+              <img src={print1} className="mx-auto"></img>
               <div className="flex justify-around w-[152px] mx-auto py-5">
                 <div className="bg-[#D5DDE0] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 <div className="bg-[#EDD4D7] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
@@ -50,7 +50,7 @@ export default function Section_four() {
                 <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
               </div>
               <div className="flex items-center justify-center py-5">
-                <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                <p className="font-bold">Máy in 1</p>
               </div>
               <div className="flex gap-2">
                 <p className="line-through">19.429.000đ</p>
@@ -61,7 +61,7 @@ export default function Section_four() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] ">
                 New
               </p>
-              <img src={product_2} className="mx-auto"></img>
+              <img src={print2} className="mx-auto"></img>
               <div className="flex justify-around w-[152px] mx-auto py-5 ">
                 <div className="bg-[#D5DDE0] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 <div className="bg-[#EDD4D7] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
@@ -70,7 +70,7 @@ export default function Section_four() {
                 <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
               </div>
               <div className="flex items-center justify-center py-5">
-                <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                <p className="font-bold">Máy in 1</p>
               </div>
               <div className="flex gap-2">
                 <p className="line-through">19.429.000đ</p>
@@ -81,7 +81,7 @@ export default function Section_four() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] ">
                 New
               </p>
-              <img src={product_1} className="mx-auto"></img>
+              <img src={print1} className="mx-auto"></img>
               <div className="flex justify-around w-[152px] mx-auto py-5">
                 <div className="bg-[#D5DDE0] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 <div className="bg-[#EDD4D7] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
@@ -90,7 +90,7 @@ export default function Section_four() {
                 <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
               </div>
               <div className="flex items-center justify-center py-5">
-                <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                <p className="font-bold">Máy in 1</p>
               </div>
               <div className="flex gap-2">
                 <p className="line-through">19.429.000đ</p>
@@ -101,7 +101,7 @@ export default function Section_four() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] ">
                 New
               </p>
-              <img src={product_2} className="mx-auto"></img>
+              <img src={print2} className="mx-auto"></img>
               <div className="flex justify-around w-[152px] mx-auto py-5">
                 <div className="bg-[#D5DDE0] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 <div className="bg-[#EDD4D7] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
@@ -110,7 +110,7 @@ export default function Section_four() {
                 <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
               </div>
               <div className="flex items-center justify-center py-5">
-                <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                <p className="font-bold">Máy in 1</p>
               </div>
               <div className="flex gap-2">
                 <p className="line-through">19.429.000đ</p>
@@ -121,7 +121,7 @@ export default function Section_four() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] ">
                 New
               </p>
-              <img src={product_1} className="mx-auto"></img>
+              <img src={print1} className="mx-auto"></img>
               <div className="flex justify-around w-[152px] mx-auto py-5">
                 <div className="bg-[#D5DDE0] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
                 <div className="bg-[#EDD4D7] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
@@ -130,7 +130,7 @@ export default function Section_four() {
                 <div className="bg-[#515558] w-4 h-4 rounded-full hover:border-2 hover:border-[#00B685]"></div>
               </div>
               <div className="flex items-center justify-center py-5">
-                <p className="font-bold">iPhone 15 Pro Max 256GB</p>
+                <p className="font-bold">Máy in 1</p>
               </div>
               <div className="flex gap-2">
                 <p className="line-through">19.429.000đ</p>
