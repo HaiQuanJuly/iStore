@@ -1,46 +1,31 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/footer/Footer";
-import News from "./components/main/News";
-import PhuKien1 from "./components/main/PhuKien1";
-import PhuKien2 from "./components/main/PhuKien2";
-import Macbook from "./components/main/Macbook";
-import Watch from "./components/main/Watch";
-import Ipad from "./components/main/Ipad";
+import PageLayout from "./components/layout/PageLayout";
+import HomePage from "./components/pages/HomePage";
 import Iphone from "./components/main/Iphone";
-import Section_3 from "./components/main/Section_3";
-import Section_2 from "./components/main/Section_2";
-import Section_1 from "./components/main/Section_1";
-import Banner from "./components/banner/Banner";
-import Header from "./components/header/Header";
-import ProductDetail from "./components/ProductDetail/DetailIphone"; // Chi tiết sản phẩm
+import Ipad from "./components/main/Ipad";
+import Macbook from "./components/main/Macbook";
+import ProductDetail from "./components/ProductDetail/DetailIphone";
+import ProductDetailIpad from "./components/ProductDetail/DetailIpad";
+import ProductDetailMacbook from "./components/ProductDetail/DetailMacbook";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Banner />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Section_1 />
-              <Section_2 />
-              <Section_3 />
-              <Ipad />
-              <Iphone />
-              <Macbook />
-              <PhuKien1 />
-              <PhuKien2 />
-              <Watch />
-              <News />
-            </>
-          }
-        />
-        <Route path="/iphone" element={<Iphone />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/" element={<PageLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="iphone" element={<Iphone />} />
+          <Route path="ipad" element={<Ipad />} />
+          <Route path="macbook" element={<Macbook />} />
+
+          <Route path="product/:id" element={<ProductDetail />} />
+          <Route path="product/ipad/:id" element={<ProductDetailIpad />} />
+          <Route
+            path="product/macbook/:id"
+            element={<ProductDetailMacbook />}
+          />
+        </Route>
       </Routes>
-      <Footer />
     </Router>
   );
 }

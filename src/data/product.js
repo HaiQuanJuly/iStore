@@ -13,6 +13,7 @@ const products = [
     originalPrice: 19429000,
     colors: ["#D5DDE0", "#EDD4D7", "#EEE9CC", "#D2DDCD", "#515558"],
     isNew: true,
+    isHotDeal: true, // Đánh dấu là sản phẩm Hot Deal
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const products = [
     originalPrice: 24890000,
     colors: ["#FAD6D6", "#CFCFCF", "#D6D6D6", "#A2A2A2", "#515558"],
     isNew: true,
+    isHotDeal: true,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const products = [
     originalPrice: 21990000,
     colors: ["#EAEAEA", "#F0C9C9", "#C8D0C8", "#ACB1AC", "#515558"],
     isNew: true,
+    isHotDeal: true,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const products = [
     originalPrice: 18990000,
     colors: ["#D5DDE0", "#EDD4D7", "#EEE9CC", "#D2DDCD", "#515558"],
     isNew: true,
+    isHotDeal: true,
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const products = [
     originalPrice: 14990000,
     colors: ["#FAD6D6", "#CFCFCF", "#D6D6D6", "#A2A2A2", "#515558"],
     isNew: true,
+    isHotDeal: true,
   },
 ];
 
