@@ -7,10 +7,6 @@ export default function ProductDetail() {
   const { id } = useParams();
   const product = productsIpad.find((p) => p.id === Number(id));
 
-  if (!product) {
-    return <p className="text-center text-red-500">Sản phẩm không tồn tại</p>;
-  }
-
   return (
     <div>
       <div className="px-[120px] py-12">
