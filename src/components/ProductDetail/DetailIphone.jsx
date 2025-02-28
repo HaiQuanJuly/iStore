@@ -15,6 +15,9 @@ export default function ProductDetail() {
   // Khai báo trạng thái lưu dung lượng và giá
   const [selectedStorage, setSelectedStorage] = useState("256GB");
   const [price, setPrice] = useState(product.price);
+  const [selectedColor, setSelectedColor] = useState(
+    product.images[product.colors[0]]
+  ); // Mặc định là màu đầu tiên
 
   // Danh sách dung lượng và giá tương ứng
   const storageOptions = [
@@ -27,6 +30,11 @@ export default function ProductDetail() {
   const handleStorageChange = (storage) => {
     setSelectedStorage(storage.size);
     setPrice(storage.price);
+  };
+
+  // Xử lý khi chọn màu sắc
+  const handleColorChange = (color) => {
+    setSelectedColor(product.images[color]); // Cập nhật ảnh khi chọn màu
   };
 
   return (
@@ -43,7 +51,7 @@ export default function ProductDetail() {
         <div className="flex gap-10">
           <div className="w-[500px]">
             <img
-              src={product.image}
+              src={selectedColor}
               alt={product.name}
               className="w-full rounded-xl shadow-md"
             />
@@ -65,6 +73,7 @@ export default function ProductDetail() {
                     key={index}
                     className="w-8 h-8 rounded-full border hover:border-[#00B685]"
                     style={{ backgroundColor: color }}
+                    onClick={() => handleColorChange(color)} // Thay đổi ảnh khi click vào màu
                   ></div>
                 ))}
               </div>

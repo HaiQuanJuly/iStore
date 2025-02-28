@@ -1,6 +1,6 @@
 // import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import iphone3 from "../../assets/product/iphone3.webp";
+import iphone12_1 from "../../assets/product/iphone12/iphone5.webp";
 import image5 from "../../assets/product/iphonebanner1.png";
 import watch_1 from "../../assets/product/watch_1.png";
 import watch_2 from "../../assets/product/watch_2.png";
@@ -15,7 +15,7 @@ export default function Section_three() {
         <div className="bg-white rounded-xl w-full lg:w-[50%] px-8 py-6 flex flex-col lg:flex-row">
           <div className="flex flex-col items-center">
             <div className="w-full max-w-[334px] bg-[#F6F6F6] p-5">
-              <img src={iphone3} className="p-5"></img>
+              <img src={iphone12_1} className="p-5"></img>
             </div>
             <div className="text-sm pt-3">
               <li>6.1 inch, Dynamic AMOLED 2X, FHD+</li>

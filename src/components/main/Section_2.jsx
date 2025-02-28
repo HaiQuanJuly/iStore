@@ -1,12 +1,12 @@
 import { FaFire } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import products from "../../data/product.js"; // Import chung với danh sách iPhone
+import products from "../../data/product"; // Import danh sách sản phẩm
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useState } from "react";
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -23,9 +23,23 @@ const responsive = {
     items: 1,
   },
 };
+
 export default function Section_two() {
   const navigate = useNavigate();
-  const hotDeals = products.filter((product) => product.isHotDeal);
+
+  // Hiển thị tất cả các sản phẩm trong products
+  const hotDeals = products; // Lấy tất cả sản phẩm từ data
+
+  // State to track selected image for each product
+  const [selectedImages, setSelectedImages] = useState({});
+
+  // Handle color change for a product
+  const handleColorChange = (color, productId, productImages) => {
+    setSelectedImages((prevState) => ({
+      ...prevState,
+      [productId]: productImages[color], // Update the selected image based on color
+    }));
+  };
 
   return (
     <div>
@@ -54,6 +68,7 @@ export default function Section_two() {
             </div>
           </div>
 
+          {/* Carousel of hot deals */}
           <Carousel
             responsive={responsive}
             className="flex items-center w-full max-w-[1400px] mx-auto py-12"
@@ -67,8 +82,13 @@ export default function Section_two() {
                 <p className="text-transparent bg-clip-text bg-gradient-to-t from-[#FF190A] to-[#FFF500] font-semibold">
                   Bán chạy
                 </p>
+
+                {/* Display the selected image based on the color */}
                 <img
-                  src={product.image}
+                  src={
+                    selectedImages[product.id] ||
+                    product.images[product.colors[0]]
+                  }
                   className="mx-auto w-full h-[300px] object-cover"
                   alt={product.name}
                 />
@@ -78,6 +98,9 @@ export default function Section_two() {
                       key={index}
                       className="w-4 h-4 rounded-full border border-gray-300 hover:border-[#00B685]"
                       style={{ backgroundColor: color }}
+                      onClick={() =>
+                        handleColorChange(color, product.id, product.images)
+                      } // Change image based on selected color
                     ></div>
                   ))}
                 </div>
